@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import AddTodo from '../components/AddTodo'
 import TodoItem from '../components/TodoItem'
+import { addTask } from '../redux/actions'
 import styles from "./Main.style.js"
 
 export const Main = (props) => {
@@ -11,7 +12,8 @@ export const Main = (props) => {
                 <h1 style={styles.title}>Todo  List</h1>
                 <div style={styles.inputWrapper}>
 
-                    <AddTodo />
+                    <AddTodo addTodo={(todo) => props.addTodo(todo)}/>
+                    <hr style={styles.seperator}/>
                 </div>
                  <TodoItem/>
 
@@ -22,6 +24,8 @@ export const Main = (props) => {
 
 const mapStateToProps = (state) => ({})
 
-const mapDispatchToProps = (dispatch) => { }
+const mapDispatchToProps = (dispatch) => ({
+    addTodo : (todo) => dispatch(addTask(todo))
+ })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)

@@ -23,8 +23,14 @@ let styles = {
     inputWrapper:{
         alignItems:"center",
         justifyContent:"center",
-        
 
+
+    },
+
+    seperator:{
+        height: "0.01mm",
+        color:"black",
+        width:"78%" ,
     }
 }
 

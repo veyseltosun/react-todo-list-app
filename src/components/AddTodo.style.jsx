@@ -1,5 +1,6 @@
 let styles = {
     inputField:{
+        marginTop:30,
         border:"none",
         width:"72%",
         margin:"1rem",

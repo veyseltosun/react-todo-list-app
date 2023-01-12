@@ -5,6 +5,7 @@ const styles = {
 
     },
     taskWrapper:{
+    
         marginBottom:12,
         width:"80%",
         textAlign:"center",

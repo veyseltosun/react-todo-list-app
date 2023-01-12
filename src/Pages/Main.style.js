@@ -5,7 +5,7 @@ let styles = {
         display:"flex",
         alignItems:"center",
         backgroundColor:"#fafafa",
-        height:"100vh",
+        height:"100%",
     },
     container:{
         borderRadius:15,

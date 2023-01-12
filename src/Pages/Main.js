@@ -1,9 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import AddTodo from '../components/AddTodo'
 
 export const Main = (props) => {
   return (
-    <div>Main</div>
+    <div>
+        <AddTodo/>
+    </div>
   )
 }
 

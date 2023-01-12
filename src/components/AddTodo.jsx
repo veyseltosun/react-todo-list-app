@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './AddTodo.style.jsx'
 
 const AddTodo = () => {
   return (
     <div>
-        <h1>Hello</h1>
+       <input  style={styles.inputField}/>
     </div>
   )
 }

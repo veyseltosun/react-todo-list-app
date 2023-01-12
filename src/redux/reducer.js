@@ -1,9 +1,9 @@
-import React from 'react'
-
-const reducer = () => {
-  return (
-    <div>reducer</div>
-  )
+const initialData = {
+    taskItem :[]
 }
 
-export default reducer
+const taskReducer = (state =initialData, action ) => {
+
+}
+
+export default taskReducer;

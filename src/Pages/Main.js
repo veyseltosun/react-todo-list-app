@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import AddTodo from '../components/AddTodo'
+import TodoItem from '../components/TodoItem'
 import styles from "./Main.style.js"
 
 export const Main = (props) => {
@@ -12,6 +13,7 @@ export const Main = (props) => {
 
                     <AddTodo />
                 </div>
+                 <TodoItem/>
 
             </div>
         </div>

@@ -5,6 +5,7 @@ const AddTodo = () => {
   return (
     <div>
        <input  style={styles.inputField}/>
+       <button style={styles.submitButton}>Add</button>
     </div>
   )
 }

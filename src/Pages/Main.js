@@ -7,8 +7,11 @@ export const Main = (props) => {
     return (
         <div style={styles.appContainer}>
             <div style={styles.container}>
-                <h1 style={styles.title}>TodoList</h1>
-                <AddTodo />
+                <h1 style={styles.title}>Todo  List</h1>
+                <div style={styles.inputWrapper}>
+
+                    <AddTodo />
+                </div>
 
             </div>
         </div>
@@ -17,6 +20,6 @@ export const Main = (props) => {
 
 const mapStateToProps = (state) => ({})
 
-const mapDispatchToProps = (dispatch) => {}
+const mapDispatchToProps = (dispatch) => { }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main)
